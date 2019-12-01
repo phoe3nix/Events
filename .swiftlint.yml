@@ -16,7 +16,6 @@ opt_in_rules:
   - operator_usage_whitespace
   - closure_end_indentation
   - first_where
-  # - number_separator (100000  =>  100_000)
   - prohibited_super_call
   - fatal_error_message
   - unneeded_parentheses_in_closure_argument
@@ -56,24 +55,3 @@ nesting:
 
 excluded:
   - Carthage
-  - Pods
-  - Sberbank/Notification Content Extension
-  - Documents
-  - build-scripts
-
-  - Messenger/Carthage
-  - Sberbank/Sberthage/Checkouts/CreditRating
-  - Sberbank/Sberthage/Checkouts/MessengerKit
-  - Sberbank/Watch App Extension
-  - StoreAndSales/StoreAndSalesTests/AutoMockable.generated.swift
-  - StoreAndSales/SuperStoreAndSales/SuperPromoViewController.swift
-
-
-custom_rules:
-  disable_print:
-    included: ".*\\.swift"
-    excluded: ".*Tests\\.swift"
-    name: "print usage"
-    regex: "((\\bprint)|(debugPrint))\\s*\\("
-    message: "Необходимо использовать log() из DebugHelper.framework"
-    severity: warning
