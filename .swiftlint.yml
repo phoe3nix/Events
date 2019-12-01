@@ -1,0 +1,6 @@
+excluded: # paths to ignore during linting.
+  - Carthage
+
+identifier_name:
+  min_length: 3
+  max_length: 50
