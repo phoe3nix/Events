@@ -10,6 +10,7 @@ cache:
 before_script:
   - bundle exec danger
   - brew update && brew bundle
+  - carthage update
 jobs:
   include:
 # ==============================================================================
