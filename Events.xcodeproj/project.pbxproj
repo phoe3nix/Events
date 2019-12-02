@@ -206,7 +206,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/swiftlint \n";
+			shellScript = "/usr/local/bin/swiftlint --config .swiftlint.yml --strict\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
