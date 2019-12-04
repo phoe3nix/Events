@@ -1,0 +1,9 @@
+sources:
+  - Events
+templates:
+  - Sourcery/AutoMockable.stencil
+output:
+  EventsTests
+args:
+  testable:
+    - Events
