@@ -14,4 +14,5 @@ internal class Assembly {
 	func main() {
 		_ = Container()
 	}
+
 }
