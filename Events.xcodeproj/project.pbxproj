@@ -16,6 +16,7 @@
 		CBF78CAD2398363100CE7E8A /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF78CAC2398363100CE7E8A /* Assembly.swift */; };
 		CBF78CB52398383D00CE7E8A /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBF78CB3239837DA00CE7E8A /* Swinject.framework */; };
 		CBF78CB62398383D00CE7E8A /* Swinject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBF78CB3239837DA00CE7E8A /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBF78CB823983B1A00CE7E8A /* AutoMockable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF78CB723983B1A00CE7E8A /* AutoMockable.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		CBF78CA323982D2000CE7E8A /* AutoMockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoMockable.swift; sourceTree = "<group>"; };
 		CBF78CAC2398363100CE7E8A /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
 		CBF78CB3239837DA00CE7E8A /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
+		CBF78CB723983B1A00CE7E8A /* AutoMockable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoMockable.generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 		CBF78C992395964100CE7E8A /* EventsTests */ = {
 			isa = PBXGroup;
 			children = (
+				CBF78CB723983B1A00CE7E8A /* AutoMockable.generated.swift */,
 				CBF78C9A2395964100CE7E8A /* EventsTests.swift */,
 				CBF78C9C2395964100CE7E8A /* Info.plist */,
 			);
@@ -300,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBF78C9B2395964100CE7E8A /* EventsTests.swift in Sources */,
+				CBF78CB823983B1A00CE7E8A /* AutoMockable.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
