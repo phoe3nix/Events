@@ -17,8 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 					 didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
 		window = UIWindow(frame: UIScreen.main.bounds)
-		let viewController = ViewController()
-		viewController.view.backgroundColor = .red
+		let viewController = PreferenceViewController()
 		window?.rootViewController = viewController
 		window?.makeKeyAndVisible()
 		return true

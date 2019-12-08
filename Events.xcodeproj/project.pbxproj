@@ -22,6 +22,7 @@
 		CBF78CE7239D000E00CE7E8A /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF78CE6239D000E00CE7E8A /* Request.swift */; };
 		CBF78CE9239D025200CE7E8A /* CategoriesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF78CE8239D025200CE7E8A /* CategoriesRequest.swift */; };
 		CBF78CEB239D0D7B00CE7E8A /* EventsError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF78CEA239D0D7B00CE7E8A /* EventsError.swift */; };
+		CBF78CF0239D181200CE7E8A /* PreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF78CEF239D181200CE7E8A /* PreferenceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		CBF78CE6239D000E00CE7E8A /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		CBF78CE8239D025200CE7E8A /* CategoriesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesRequest.swift; sourceTree = "<group>"; };
 		CBF78CEA239D0D7B00CE7E8A /* EventsError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsError.swift; sourceTree = "<group>"; };
+		CBF78CEF239D181200CE7E8A /* PreferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 		CBF78C5F2394392000CE7E8A /* Events */ = {
 			isa = PBXGroup;
 			children = (
+				CBF78CEE239D16C200CE7E8A /* Scenes */,
 				CBF78CE5239CFF6E00CE7E8A /* Network */,
 				CBF78CE2239CF78C00CE7E8A /* Models */,
 				CBF78C602394392000CE7E8A /* AppDelegate.swift */,
@@ -153,17 +156,17 @@
 			isa = PBXGroup;
 			children = (
 				CBF78CED239D10DC00CE7E8A /* Core */,
-				CBF78CEC239D108B00CE7E8A /* Resuests */,
+				CBF78CEC239D108B00CE7E8A /* Requests */,
 			);
 			name = Network;
 			sourceTree = "<group>";
 		};
-		CBF78CEC239D108B00CE7E8A /* Resuests */ = {
+		CBF78CEC239D108B00CE7E8A /* Requests */ = {
 			isa = PBXGroup;
 			children = (
 				CBF78CE8239D025200CE7E8A /* CategoriesRequest.swift */,
 			);
-			name = Resuests;
+			name = Requests;
 			sourceTree = "<group>";
 		};
 		CBF78CED239D10DC00CE7E8A /* Core */ = {
@@ -174,6 +177,14 @@
 				CBF78CEA239D0D7B00CE7E8A /* EventsError.swift */,
 			);
 			name = Core;
+			sourceTree = "<group>";
+		};
+		CBF78CEE239D16C200CE7E8A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				CBF78CEF239D181200CE7E8A /* PreferenceViewController.swift */,
+			);
+			name = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,6 +354,7 @@
 				CBF78CA423982D2000CE7E8A /* AutoMockable.swift in Sources */,
 				CBF78CEB239D0D7B00CE7E8A /* EventsError.swift in Sources */,
 				CBF78C612394392000CE7E8A /* AppDelegate.swift in Sources */,
+				CBF78CF0239D181200CE7E8A /* PreferenceViewController.swift in Sources */,
 				CBF78CE7239D000E00CE7E8A /* Request.swift in Sources */,
 				CBF78CE1239CF28000CE7E8A /* API.swift in Sources */,
 				CBF78CE4239CF7AF00CE7E8A /* Categories.swift in Sources */,
