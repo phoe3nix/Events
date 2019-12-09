@@ -1,0 +1,15 @@
+# macOS
+## Вспомогательные системные файлы.
+
+# Xcode
+## Пользовательские настройки.
+xcuserdata/
+
+## Состояние проверок воркспейса
+IDEWorkspaceChecks.plist
+
+Carthage
+
+EventsTests/AutoMockable.generated.swift
+
+

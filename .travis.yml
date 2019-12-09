@@ -1,0 +1,24 @@
+language: swift
+os: osx
+osx_image: xcode10.3
+xcode_sdk: iphonesimulator12.2
+
+cache:
+  directories:
+    - Carthage
+
+before_script:
+  - bundle exec danger
+  - brew update && brew bundle
+  - carthage update --platform iOS
+jobs:
+  include:
+# ==============================================================================
+    - stage: test
+      if: NOT (tag IS present)
+      env: JOB=iOS Tests
+      script:
+        - xcodebuild -project Events.xcodeproj -scheme Events -destination "platform=iOS Simulator,name=iPhone 7 Plus" CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" build-for-testing| xcpretty -f `xcpretty-travis-formatter`
+        - xcodebuild -project Events.xcodeproj -scheme Events -destination "platform=iOS Simulator,name=iPhone 7 Plus" CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" test| xcpretty -f `xcpretty-travis-formatter`
+      after_success:
+# ==============================================================================
