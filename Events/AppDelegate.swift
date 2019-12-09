@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Swinject
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 					 didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
 		window = UIWindow(frame: UIScreen.main.bounds)
-		let viewController = PreferenceViewController()
+		let viewController = Assembly.createContainer().resolve(PreferenceViewController.self)
 		window?.rootViewController = viewController
 		window?.makeKeyAndVisible()
 		return true

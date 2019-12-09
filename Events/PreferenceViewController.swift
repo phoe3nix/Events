@@ -10,6 +10,8 @@ import UIKit
 
 internal final class PreferenceViewController: UIViewController {
 
+	var presenter: PreferencePresenterLogic!
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
@@ -32,8 +34,23 @@ internal final class PreferenceViewController: UIViewController {
 		return label
 	}()
 
+	let preferenceCollectionView: UICollectionView = {
+		let flowLayout = UICollectionViewFlowLayout()
+		flowLayout.scrollDirection = .vertical
+		let collectionView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
+		collectionView.register(PreferenceCollectionViewCell.self,
+								forCellWithReuseIdentifier: "PreferenceCollectionViewCell")
+		collectionView.showsVerticalScrollIndicator = false
+		collectionView.translatesAutoresizingMaskIntoConstraints = false
+		return collectionView
+	}()
+
 	private func setupUI() {
 		view.addSubview(titleLabel)
+		view.addSubview(preferenceCollectionView)
+
+		preferenceCollectionView.dataSource = presenter.dataSource
+		preferenceCollectionView.delegate = presenter.dataSource
 	}
 
 	private func setupConstraints() {
@@ -41,7 +58,12 @@ internal final class PreferenceViewController: UIViewController {
 			titleLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
 			titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
 			titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
-			titleLabel.heightAnchor.constraint(equalToConstant: 150)
+			titleLabel.heightAnchor.constraint(equalToConstant: 150),
+
+			preferenceCollectionView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 30),
+			preferenceCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+			preferenceCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+			preferenceCollectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
 		])
 	}
 }
