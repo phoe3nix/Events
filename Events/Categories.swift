@@ -8,8 +8,8 @@
 
 import Foundation
 
-internal class Categories: Decodable {
+internal final class Categories: Decodable {
 	let id: Int?
-	let name: String?
-	let slug: String?
+	var name: String?
+	let slug: String
 }

@@ -18,11 +18,17 @@ internal struct Assembly {
 			let presenter = resolver.resolve(PreferencePresenter.self)!
 			let viewController = PreferenceViewController()
 			viewController.presenter = presenter
+			presenter.viewLogic = viewController
 			return viewController
 		}
 
-		container.register(PreferenceInteractor.self) { _ in PreferenceInteractor() }
+		container.register(PreferenceInteractor.self) { resolver in
+			let networkService = resolver.resolve(PreferenceNetworkService.self)!
+			return PreferenceInteractor(networkService: networkService)
+		}
+
 		container.register(PreferenceDataSource.self) { _ in PreferenceDataSource() }
+		container.register(PreferenceNetworkService.self) { _ in PreferenceNetworkService() }
 
 		container.register(PreferencePresenter.self) { resolver in
 			let interactor = resolver.resolve(PreferenceInteractor.self)!

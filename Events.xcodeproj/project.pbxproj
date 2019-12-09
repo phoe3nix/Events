@@ -29,6 +29,9 @@
 		CBF78CFA239D863900CE7E8A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF78CF9239D863900CE7E8A /* Constants.swift */; };
 		CBF78CFC239D882200CE7E8A /* PreferencePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF78CFB239D882200CE7E8A /* PreferencePresenter.swift */; };
 		CBF78CFE239D892D00CE7E8A /* PreferenceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF78CFD239D892D00CE7E8A /* PreferenceInteractor.swift */; };
+		CBF78D00239EBF0000CE7E8A /* PreferenceNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF78CFF239EBF0000CE7E8A /* PreferenceNetworkService.swift */; };
+		CBF78D03239ECA0800CE7E8A /* CategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF78D02239ECA0700CE7E8A /* CategoriesViewModel.swift */; };
+		CBF78D05239EDF7200CE7E8A /* CategoriesNameMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF78D04239EDF7200CE7E8A /* CategoriesNameMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +84,9 @@
 		CBF78CF9239D863900CE7E8A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CBF78CFB239D882200CE7E8A /* PreferencePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencePresenter.swift; sourceTree = "<group>"; };
 		CBF78CFD239D892D00CE7E8A /* PreferenceInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceInteractor.swift; sourceTree = "<group>"; };
+		CBF78CFF239EBF0000CE7E8A /* PreferenceNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceNetworkService.swift; sourceTree = "<group>"; };
+		CBF78D02239ECA0700CE7E8A /* CategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewModel.swift; sourceTree = "<group>"; };
+		CBF78D04239EDF7200CE7E8A /* CategoriesNameMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesNameMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +135,7 @@
 				CBF78CEE239D16C200CE7E8A /* Scenes */,
 				CBF78CE5239CFF6E00CE7E8A /* Network */,
 				CBF78CE2239CF78C00CE7E8A /* Models */,
+				CBF78D01239EC9EE00CE7E8A /* ViewModels */,
 				CBF78C602394392000CE7E8A /* AppDelegate.swift */,
 				CBF78C622394392000CE7E8A /* ViewController.swift */,
 				CBF78C672394392000CE7E8A /* Assets.xcassets */,
@@ -137,6 +144,7 @@
 				CBF78CA323982D2000CE7E8A /* AutoMockable.swift */,
 				CBF78CAC2398363100CE7E8A /* Assembly.swift */,
 				CBF78CF9239D863900CE7E8A /* Constants.swift */,
+				CBF78D04239EDF7200CE7E8A /* CategoriesNameMapper.swift */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -201,6 +209,7 @@
 				CBF78CF7239D830D00CE7E8A /* PreferenceDataSource.swift */,
 				CBF78CFB239D882200CE7E8A /* PreferencePresenter.swift */,
 				CBF78CFD239D892D00CE7E8A /* PreferenceInteractor.swift */,
+				CBF78CFF239EBF0000CE7E8A /* PreferenceNetworkService.swift */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -219,6 +228,14 @@
 				CBF78CF5239D824700CE7E8A /* UIView+Extensions.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		CBF78D01239EC9EE00CE7E8A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CBF78D02239ECA0700CE7E8A /* CategoriesViewModel.swift */,
+			);
+			name = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -388,7 +405,9 @@
 				CBF78CA423982D2000CE7E8A /* AutoMockable.swift in Sources */,
 				CBF78CEB239D0D7B00CE7E8A /* EventsError.swift in Sources */,
 				CBF78C612394392000CE7E8A /* AppDelegate.swift in Sources */,
+				CBF78D05239EDF7200CE7E8A /* CategoriesNameMapper.swift in Sources */,
 				CBF78CF0239D181200CE7E8A /* PreferenceViewController.swift in Sources */,
+				CBF78D00239EBF0000CE7E8A /* PreferenceNetworkService.swift in Sources */,
 				CBF78CF8239D830D00CE7E8A /* PreferenceDataSource.swift in Sources */,
 				CBF78CFC239D882200CE7E8A /* PreferencePresenter.swift in Sources */,
 				CBF78CF6239D824700CE7E8A /* UIView+Extensions.swift in Sources */,
@@ -398,6 +417,7 @@
 				CBF78CFA239D863900CE7E8A /* Constants.swift in Sources */,
 				CBF78CE4239CF7AF00CE7E8A /* Categories.swift in Sources */,
 				CBF78CE9239D025200CE7E8A /* CategoriesRequest.swift in Sources */,
+				CBF78D03239ECA0800CE7E8A /* CategoriesViewModel.swift in Sources */,
 				CBF78CFE239D892D00CE7E8A /* PreferenceInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

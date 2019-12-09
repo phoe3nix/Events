@@ -8,6 +8,11 @@
 
 import UIKit
 
+internal protocol PreferenceViewControllerLogic: AnyObject {
+
+	func updateCollectionView()
+}
+
 internal final class PreferenceViewController: UIViewController {
 
 	var presenter: PreferencePresenterLogic!
@@ -18,6 +23,7 @@ internal final class PreferenceViewController: UIViewController {
 		view.backgroundColor = .black
 		setupUI()
 		setupConstraints()
+		presenter.viewDidLoad()
 	}
 
 	let titleLabel: UILabel = {
@@ -34,7 +40,7 @@ internal final class PreferenceViewController: UIViewController {
 		return label
 	}()
 
-	let preferenceCollectionView: UICollectionView = {
+	private let preferenceCollectionView: UICollectionView = {
 		let flowLayout = UICollectionViewFlowLayout()
 		flowLayout.scrollDirection = .vertical
 		let collectionView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
@@ -65,5 +71,12 @@ internal final class PreferenceViewController: UIViewController {
 			preferenceCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
 			preferenceCollectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
 		])
+	}
+}
+
+extension PreferenceViewController: PreferenceViewControllerLogic {
+
+	func updateCollectionView() {
+		preferenceCollectionView.reloadData()
 	}
 }
