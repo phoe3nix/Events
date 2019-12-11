@@ -8,14 +8,17 @@
 
 import UIKit
 
+/// Протокол логики взаимодействия экрана выбора категорий с презентером этого экрана
 internal protocol PreferenceViewControllerLogic: AnyObject {
 
+	var presenter: PreferencePresenterLogic? { get }
+
+	/// Обновление коллекции
 	func updateCollectionView()
 }
 
-internal final class PreferenceViewController: UIViewController {
-
-	var presenter: PreferencePresenterLogic!
+/// ViewController сцены выбора категорий
+internal final class PreferenceViewController: UIViewController, PreferenceViewControllerLogic {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -23,10 +26,10 @@ internal final class PreferenceViewController: UIViewController {
 		view.backgroundColor = .black
 		setupUI()
 		setupConstraints()
-		presenter.viewDidLoad()
+		presenter?.viewDidLoad()
 	}
 
-	let titleLabel: UILabel = {
+	private let titleLabel: UILabel = {
 		let label = UILabel()
 		let text = "Выберете категории, которые вам нравятся" as NSString
 		let range = text.range(of: "нравятся")
@@ -55,8 +58,8 @@ internal final class PreferenceViewController: UIViewController {
 		view.addSubview(titleLabel)
 		view.addSubview(preferenceCollectionView)
 
-		preferenceCollectionView.dataSource = presenter.dataSource
-		preferenceCollectionView.delegate = presenter.dataSource
+		preferenceCollectionView.dataSource = presenter?.dataSource
+		preferenceCollectionView.delegate = presenter?.dataSource
 	}
 
 	private func setupConstraints() {
@@ -72,9 +75,10 @@ internal final class PreferenceViewController: UIViewController {
 			preferenceCollectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
 		])
 	}
-}
 
-extension PreferenceViewController: PreferenceViewControllerLogic {
+	// MARK: PreferenceViewControllerLogic
+
+	var presenter: PreferencePresenterLogic?
 
 	func updateCollectionView() {
 		preferenceCollectionView.reloadData()

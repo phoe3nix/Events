@@ -13,3 +13,18 @@ internal enum EventsError: Error {
 	case serialize(String)
 	case `guard`
 }
+
+extension EventsError: Equatable {
+	static func == (lhs: EventsError, rhs: EventsError) -> Bool {
+		switch (lhs, rhs) {
+		case (.dataResponse, .dataResponse):
+			return true
+		case (.serialize, .serialize):
+			return true
+		case (.guard, .guard):
+			return true
+		default:
+			return false
+		}
+	}
+}

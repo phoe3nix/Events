@@ -13,3 +13,9 @@ internal final class Categories: Decodable {
 	var name: String?
 	let slug: String
 }
+
+extension Categories: Equatable {
+	static func == (lhs: Categories, rhs: Categories) -> Bool {
+		return lhs.id == rhs.id && lhs.name == rhs.name && lhs.slug == rhs.slug
+	}
+}

@@ -8,15 +8,23 @@
 
 import Foundation
 
+/// Протокол, описывающий логику работы презентера экрана выбора категорий
 internal protocol PreferencePresenterLogic: AnyObject {
 
+	/// ссылка на интерактор
 	var interactor: PreferenceInteractorLogic { get }
 
+	/// ссылка на dataSource
 	var dataSource: PreferenceDataSource { get }
 
+	/// обратная ссылка на view
+	var viewLogic: PreferenceViewControllerLogic? { get }
+
+	/// Метод, вызываемый, по загрузке основного view
 	func viewDidLoad()
 }
 
+/// Презентер сцены выбора категорий
 internal final class PreferencePresenter: PreferencePresenterLogic {
 
 	let interactor: PreferenceInteractorLogic
@@ -25,6 +33,11 @@ internal final class PreferencePresenter: PreferencePresenterLogic {
 
 	weak var viewLogic: PreferenceViewControllerLogic?
 
+	/// Основной инициализатор класса
+	///
+	/// - Parameters:
+	///   - interactor: ссылка на интерактор
+	///   - dataSource: ссылка на dataSource
 	init(interactor: PreferenceInteractorLogic, dataSource: PreferenceDataSource) {
 		self.interactor = interactor
 		self.dataSource = dataSource
@@ -35,7 +48,6 @@ internal final class PreferencePresenter: PreferencePresenterLogic {
 			guard let self = self, let viewLogic = self.viewLogic else { return }
 			switch result {
 			case .success(let categories):
-				print(categories)
 				self.dataSource.categories = categories.map { CategoriesNameMapper.nameMapper(category: $0) }
 				DispatchQueue.main.async {
 					viewLogic.updateCollectionView()

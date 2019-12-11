@@ -8,8 +8,10 @@
 
 import UIKit
 
+/// DataSource для коллекции на экране выбора категорий
 internal final class PreferenceDataSource: NSObject {
 
+	/// массив категорий
 	var categories: [Categories]?
 }
 

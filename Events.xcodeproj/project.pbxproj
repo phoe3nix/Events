@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB72164023A119A000DA18CD /* PreferenceInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB72163F23A119A000DA18CD /* PreferenceInteractorTests.swift */; };
+		CB72164323A1216F00DA18CD /* PreferenceNetworkServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB72164223A1216F00DA18CD /* PreferenceNetworkServiceMock.swift */; };
+		CB72164523A1248300DA18CD /* ResultMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB72164423A1248300DA18CD /* ResultMock.swift */; };
 		CBF78C612394392000CE7E8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF78C602394392000CE7E8A /* AppDelegate.swift */; };
 		CBF78C632394392000CE7E8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF78C622394392000CE7E8A /* ViewController.swift */; };
 		CBF78C682394392000CE7E8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBF78C672394392000CE7E8A /* Assets.xcassets */; };
@@ -59,6 +62,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CB72163F23A119A000DA18CD /* PreferenceInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceInteractorTests.swift; sourceTree = "<group>"; };
+		CB72164223A1216F00DA18CD /* PreferenceNetworkServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceNetworkServiceMock.swift; sourceTree = "<group>"; };
+		CB72164423A1248300DA18CD /* ResultMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultMock.swift; sourceTree = "<group>"; };
 		CBF78C5D2394392000CE7E8A /* Events.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Events.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF78C602394392000CE7E8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBF78C622394392000CE7E8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +114,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB72164123A120BC00DA18CD /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				CB72164223A1216F00DA18CD /* PreferenceNetworkServiceMock.swift */,
+				CB72164423A1248300DA18CD /* ResultMock.swift */,
+			);
+			name = Mocks;
+			sourceTree = "<group>";
+		};
 		CBF78C542394392000CE7E8A = {
 			isa = PBXGroup;
 			children = (
@@ -152,9 +167,11 @@
 		CBF78C992395964100CE7E8A /* EventsTests */ = {
 			isa = PBXGroup;
 			children = (
+				CB72164123A120BC00DA18CD /* Mocks */,
 				CBF78CB723983B1A00CE7E8A /* AutoMockable.generated.swift */,
 				CBF78C9A2395964100CE7E8A /* EventsTests.swift */,
 				CBF78C9C2395964100CE7E8A /* Info.plist */,
+				CB72163F23A119A000DA18CD /* PreferenceInteractorTests.swift */,
 			);
 			path = EventsTests;
 			sourceTree = "<group>";
@@ -427,7 +444,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBF78C9B2395964100CE7E8A /* EventsTests.swift in Sources */,
+				CB72164323A1216F00DA18CD /* PreferenceNetworkServiceMock.swift in Sources */,
 				CBF78CB823983B1A00CE7E8A /* AutoMockable.generated.swift in Sources */,
+				CB72164523A1248300DA18CD /* ResultMock.swift in Sources */,
+				CB72164023A119A000DA18CD /* PreferenceInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
