@@ -38,4 +38,28 @@ internal struct Assembly {
 
 		return container
 	}
+
+	static func createTabBar() -> Container {
+		let container = Container()
+
+		container.register(FirstViewController.self) { _ in FirstViewController() }
+		container.register(SecondViewController.self) { _ in SecondViewController() }
+		container.register(ThirdViewController.self) { _ in ThirdViewController() }
+		container.register(FourthViewController.self) { _ in FourthViewController() }
+		container.register(FifthViewController.self) { _ in FifthViewController() }
+
+		container.register(EventsTabBarController.self) { resolver in
+			let first = resolver.resolve(FirstViewController.self)!
+			let second = resolver.resolve(SecondViewController.self)!
+			let third = resolver.resolve(ThirdViewController.self)!
+			let fourth = resolver.resolve(FourthViewController.self)!
+			let fifth = resolver.resolve(FifthViewController.self)!
+			let tabBar = EventsTabBarController()
+			tabBar.viewControllers = [first, second, third, fourth, fifth]
+			tabBar.createTabBarItems()
+			return tabBar
+		}
+
+		return container
+	}
 }

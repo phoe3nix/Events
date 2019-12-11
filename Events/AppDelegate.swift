@@ -18,8 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 					 didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
 		window = UIWindow(frame: UIScreen.main.bounds)
-		let viewController = Assembly.createContainer().resolve(PreferenceViewController.self)
-		window?.rootViewController = viewController
+		let tabBarController = Assembly.createTabBar().resolve(EventsTabBarController.self)!
+		let navigationController = UINavigationController(rootViewController: tabBarController)
+		window?.rootViewController = navigationController
 		window?.makeKeyAndVisible()
 		return true
 	}

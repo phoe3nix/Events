@@ -10,8 +10,15 @@
 		CB72164023A119A000DA18CD /* PreferenceInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB72163F23A119A000DA18CD /* PreferenceInteractorTests.swift */; };
 		CB72164323A1216F00DA18CD /* PreferenceNetworkServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB72164223A1216F00DA18CD /* PreferenceNetworkServiceMock.swift */; };
 		CB72164523A1248300DA18CD /* ResultMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB72164423A1248300DA18CD /* ResultMock.swift */; };
+		CB72164723A172A600DA18CD /* PlaceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB72164623A172A600DA18CD /* PlaceRequest.swift */; };
+		CB72164923A1733D00DA18CD /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB72164823A1733D00DA18CD /* Place.swift */; };
+		CB72164C23A17B4900DA18CD /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB72164B23A17B4900DA18CD /* FirstViewController.swift */; };
+		CB72164E23A17B5700DA18CD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB72164D23A17B5700DA18CD /* SecondViewController.swift */; };
+		CB72165023A17B6900DA18CD /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB72164F23A17B6900DA18CD /* ThirdViewController.swift */; };
+		CB72165223A17B7800DA18CD /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB72165123A17B7800DA18CD /* FourthViewController.swift */; };
+		CB72165423A17B8700DA18CD /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB72165323A17B8700DA18CD /* FifthViewController.swift */; };
+		CB72165623A17FD500DA18CD /* EventsTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB72165523A17FD500DA18CD /* EventsTabBarController.swift */; };
 		CBF78C612394392000CE7E8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF78C602394392000CE7E8A /* AppDelegate.swift */; };
-		CBF78C632394392000CE7E8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF78C622394392000CE7E8A /* ViewController.swift */; };
 		CBF78C682394392000CE7E8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBF78C672394392000CE7E8A /* Assets.xcassets */; };
 		CBF78C6B2394392000CE7E8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF78C692394392000CE7E8A /* LaunchScreen.storyboard */; };
 		CBF78C9B2395964100CE7E8A /* EventsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF78C9A2395964100CE7E8A /* EventsTests.swift */; };
@@ -65,9 +72,16 @@
 		CB72163F23A119A000DA18CD /* PreferenceInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceInteractorTests.swift; sourceTree = "<group>"; };
 		CB72164223A1216F00DA18CD /* PreferenceNetworkServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceNetworkServiceMock.swift; sourceTree = "<group>"; };
 		CB72164423A1248300DA18CD /* ResultMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultMock.swift; sourceTree = "<group>"; };
+		CB72164623A172A600DA18CD /* PlaceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceRequest.swift; sourceTree = "<group>"; };
+		CB72164823A1733D00DA18CD /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		CB72164B23A17B4900DA18CD /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		CB72164D23A17B5700DA18CD /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		CB72164F23A17B6900DA18CD /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		CB72165123A17B7800DA18CD /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		CB72165323A17B8700DA18CD /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
+		CB72165523A17FD500DA18CD /* EventsTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTabBarController.swift; sourceTree = "<group>"; };
 		CBF78C5D2394392000CE7E8A /* Events.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Events.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF78C602394392000CE7E8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CBF78C622394392000CE7E8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CBF78C672394392000CE7E8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBF78C6A2394392000CE7E8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBF78C6C2394392000CE7E8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -123,6 +137,19 @@
 			name = Mocks;
 			sourceTree = "<group>";
 		};
+		CB72164A23A17B2D00DA18CD /* TabBarControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CB72164B23A17B4900DA18CD /* FirstViewController.swift */,
+				CB72164D23A17B5700DA18CD /* SecondViewController.swift */,
+				CB72164F23A17B6900DA18CD /* ThirdViewController.swift */,
+				CB72165123A17B7800DA18CD /* FourthViewController.swift */,
+				CB72165323A17B8700DA18CD /* FifthViewController.swift */,
+				CB72165523A17FD500DA18CD /* EventsTabBarController.swift */,
+			);
+			name = TabBarControllers;
+			sourceTree = "<group>";
+		};
 		CBF78C542394392000CE7E8A = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +172,7 @@
 		CBF78C5F2394392000CE7E8A /* Events */ = {
 			isa = PBXGroup;
 			children = (
+				CB72164A23A17B2D00DA18CD /* TabBarControllers */,
 				CBF78CF4239D81E900CE7E8A /* Extensions */,
 				CBF78CF1239D80DE00CE7E8A /* CollectionViewCell */,
 				CBF78CEE239D16C200CE7E8A /* Scenes */,
@@ -152,7 +180,6 @@
 				CBF78CE2239CF78C00CE7E8A /* Models */,
 				CBF78D01239EC9EE00CE7E8A /* ViewModels */,
 				CBF78C602394392000CE7E8A /* AppDelegate.swift */,
-				CBF78C622394392000CE7E8A /* ViewController.swift */,
 				CBF78C672394392000CE7E8A /* Assets.xcassets */,
 				CBF78C692394392000CE7E8A /* LaunchScreen.storyboard */,
 				CBF78C6C2394392000CE7E8A /* Info.plist */,
@@ -188,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				CBF78CE3239CF7AF00CE7E8A /* Categories.swift */,
+				CB72164823A1733D00DA18CD /* Place.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -205,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				CBF78CE8239D025200CE7E8A /* CategoriesRequest.swift */,
+				CB72164623A172A600DA18CD /* PlaceRequest.swift */,
 			);
 			name = Requests;
 			sourceTree = "<group>";
@@ -417,17 +446,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBF78C632394392000CE7E8A /* ViewController.swift in Sources */,
 				CBF78CAD2398363100CE7E8A /* Assembly.swift in Sources */,
 				CBF78CA423982D2000CE7E8A /* AutoMockable.swift in Sources */,
 				CBF78CEB239D0D7B00CE7E8A /* EventsError.swift in Sources */,
 				CBF78C612394392000CE7E8A /* AppDelegate.swift in Sources */,
 				CBF78D05239EDF7200CE7E8A /* CategoriesNameMapper.swift in Sources */,
 				CBF78CF0239D181200CE7E8A /* PreferenceViewController.swift in Sources */,
+				CB72164723A172A600DA18CD /* PlaceRequest.swift in Sources */,
 				CBF78D00239EBF0000CE7E8A /* PreferenceNetworkService.swift in Sources */,
+				CB72165223A17B7800DA18CD /* FourthViewController.swift in Sources */,
 				CBF78CF8239D830D00CE7E8A /* PreferenceDataSource.swift in Sources */,
+				CB72164E23A17B5700DA18CD /* SecondViewController.swift in Sources */,
 				CBF78CFC239D882200CE7E8A /* PreferencePresenter.swift in Sources */,
 				CBF78CF6239D824700CE7E8A /* UIView+Extensions.swift in Sources */,
+				CB72164923A1733D00DA18CD /* Place.swift in Sources */,
 				CBF78CF3239D810500CE7E8A /* PreferenceCollectionViewCell.swift in Sources */,
 				CBF78CE7239D000E00CE7E8A /* Request.swift in Sources */,
 				CBF78CE1239CF28000CE7E8A /* API.swift in Sources */,
@@ -435,7 +467,11 @@
 				CBF78CE4239CF7AF00CE7E8A /* Categories.swift in Sources */,
 				CBF78CE9239D025200CE7E8A /* CategoriesRequest.swift in Sources */,
 				CBF78D03239ECA0800CE7E8A /* CategoriesViewModel.swift in Sources */,
+				CB72165423A17B8700DA18CD /* FifthViewController.swift in Sources */,
+				CB72165623A17FD500DA18CD /* EventsTabBarController.swift in Sources */,
 				CBF78CFE239D892D00CE7E8A /* PreferenceInteractor.swift in Sources */,
+				CB72165023A17B6900DA18CD /* ThirdViewController.swift in Sources */,
+				CB72164C23A17B4900DA18CD /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

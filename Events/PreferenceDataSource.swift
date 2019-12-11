@@ -33,7 +33,10 @@ extension PreferenceDataSource: UICollectionViewDataSource {
 	}
 }
 
-extension PreferenceDataSource: UICollectionViewDelegate {}
+extension PreferenceDataSource: UICollectionViewDelegate {
+
+	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {}
+}
 
 extension PreferenceDataSource: UICollectionViewDelegateFlowLayout {
 
